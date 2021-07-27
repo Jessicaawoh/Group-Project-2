@@ -72,7 +72,7 @@ What things you need to run the app
 
 MIT License
 
-Copyright (c) 2020 Etornam Sunu
+Copyright (c) 2021 Akash Dansinghani
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
