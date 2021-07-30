@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
-class Scan extends StatefulWidget {
+class BackOrder extends StatefulWidget {
   @override
   _ScanState createState() => _ScanState();
 }
 
-class _ScanState extends State<Scan> {
-  String qrResult = "Not yet scanned";
+class _ScanState extends State<BackOrder> {
+  String qrResult = "Here are your Orders ";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Scan"),
+        title: Text("Back Order"),
         centerTitle: true,
       ),
       body: Container(
@@ -33,24 +33,6 @@ class _ScanState extends State<Scan> {
             ),
             SizedBox(
               height: 20.0,
-            ),
-
-//scanning qr code
-
-            FlatButton(
-              padding: EdgeInsets.all(15.0),
-              child: Text("Scan QR Code"),
-              onPressed: () async {
-                String scanning = await FlutterBarcodeScanner.scanBarcode(
-                    "#FF6666", "Cancel", true, ScanMode.QR);
-
-                setState(() {
-                  qrResult = scanning;
-                });
-              },
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(color: Colors.blue, width: 3.0)),
             ),
           ],
         ),

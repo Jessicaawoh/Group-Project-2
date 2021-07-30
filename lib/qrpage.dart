@@ -1,3 +1,4 @@
+import 'package:QRScanner/backorder.dart';
 import 'package:QRScanner/generate.dart';
 import 'package:QRScanner/scan.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class _QRPageState extends State<QRPage> {
             SizedBox(
               height: 10.0,
             ),
+            flatButtonTwo("Back Orders", BackOrder(), context),
             flatButtonTwo("Scan QR Code", Scan(), context),
             SizedBox(
               height: 10.0,
