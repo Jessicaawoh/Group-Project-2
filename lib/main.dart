@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'login.dart';
@@ -88,8 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     });
                     try {
                       final newuser =
-                      await _auth.createUserWithEmailAndPassword(
-                          email: email, password: password);
+                          await _auth.createUserWithEmailAndPassword(
+                              email: email, password: password);
 
                       if (newuser != null) {
                         Navigator.push(
@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     "Register",
                     style:
-                    TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0),
+                        TextStyle(fontWeight: FontWeight.w500, fontSize: 20.0),
                   ),
                 ),
               ),
